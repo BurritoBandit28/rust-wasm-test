@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Rust Wasm Test</title>
+</head>
+<body>
+<script type="module">
+    import init, {do_password_check} from "./pkg/rust_wasm_test.js";
+    init().then(()=> {
+        do_password_check()
+    });
+</script>
+</body>
+</html>
