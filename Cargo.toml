@@ -1,0 +1,14 @@
+[package]
+name = "rust-wasm-test"
+version = "0.1.0"
+edition = "2021"
+authors = ["@BurritoBandit28"]
+description = "A test using WASM and rust cus why not"
+license = "MIT"
+
+[dependencies]
+wasm-bindgen = "0.2.95"
+password_validator = { git =  "https://github.com/BurritoBandit28/password_validator.git"}
+
+[lib]
+crate-type = ["cdylib"]
